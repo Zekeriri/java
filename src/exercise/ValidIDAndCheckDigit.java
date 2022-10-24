@@ -2,13 +2,13 @@ package exercise;
 
 public class ValidIDAndCheckDigit {
     public static void main(String[] args) {
-        System.out.println(isValidID("-22221a20A"));
+        System.out.println(isValidID("00000000X"));
     }
     //
     public static boolean isValidID(String id) {
         int len=id.length();
         int sum=0;
-        int last=0;
+        int last=-1;
         int expectLast;
         boolean flag = false;
         //最后一位是其他字符
@@ -35,6 +35,7 @@ public class ValidIDAndCheckDigit {
             if (Character.isDigit(id.charAt(i)))
                 sum=sum+Integer.parseInt(id.substring(i,i+1));
         }
+
         //最后一位为X
         if (id.charAt(len-1) != 'X')
             last = Integer.parseInt(id.substring(len - 1, len));
