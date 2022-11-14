@@ -53,3 +53,7 @@ mvnw.cmd
 mvnw
 # Files or folders need to be retained
 # ...
+/JavaApplication5/nbproject/private/
+/NetBeans/nbproject/private/
+/NetBeans/Lab9/nbproject/private/
+/NetBeans/Lab9/build/

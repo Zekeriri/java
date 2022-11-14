@@ -9,6 +9,6 @@ public class RevNum
 
     public static String revNum(String input) {
 
-
+        return "0";
     }
 }
